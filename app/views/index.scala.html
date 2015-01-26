@@ -1,0 +1,48 @@
+@main(title = "Home") {
+
+    <h1>Index Page - Reactive Java 8 Lambdas Play</h1>
+
+    <p>
+
+        Simple project which provides an API which accepts a list of json 'customer' objects in the body of a POST request.<br><br>
+        The API takes a list of objects, sorts them by due time, and then returns them back as a sorted json array.<br><br>
+        The API services the POST request using non-blocking/reactive facilities provided by Java 8 and the Play Framework.<br><br>
+
+        A Json customer object array:<br><br>
+        <span style ="font-size:11px">
+        [
+            {
+                "id": 10000000,
+                "name": "Ulysses Leon",
+                "duetime": "2014-06-18T06:26:56-07:00",
+                "jointime": "2015-04-08T12:47:16-07:00"
+            },
+            {
+                "id": 10000001,
+                "name": "Bruce Cardenas",
+                "duetime": "2013-12-28T14:11:12-08:00",
+                "jointime": "2014-07-03T21:53:42-07:00"
+            },
+            {
+                "id": 10000099,
+                "name": "Neville Mcdowell",
+                "duetime": "2015-07-27T18:52:03-07:00",
+                "jointime": "2014-07-22T23:43:23-07:00"
+            }
+        ]</span>
+
+        <br><br>
+        The POST request url is:<br><br>
+
+            <b>/sortCustomers</b><br><br>
+        The Json data must be contained within the request body data.<br><br>
+
+            <hr>
+
+        Project was developed using:<br><br>
+            Play 2.3.7 (Activator 1.2.12)<br>
+            Java - jdk1.8.0_20<br>
+            Intellj 13.1.5<br>
+    </p>
+
+}

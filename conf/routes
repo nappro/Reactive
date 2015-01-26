@@ -1,0 +1,7 @@
+# Routes
+
+GET         /                               controllers.Application.index()
+POST        /sortCustomers                  controllers.Application.sortCustomers()
+
+GET         /assets/*file                   controllers.Assets.at(path="/public", file)
+GET         /webjars/*file                  controllers.WebJarAssets.at(file)
